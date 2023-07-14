@@ -59,6 +59,7 @@ main > .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
+  margin-bottom: 15%;
 }
 
 main > .container div:nth-child(2) {
@@ -95,3 +96,26 @@ main > .container .image .name {
   line-height: normal;
   margin-top: 10px;
 }
+
+/* This footer part style */
+
+footer > p {
+    color: #bdbdbd;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 50px;
+  }
+  
+  footer > p span {
+    color: #bdbdbd;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
