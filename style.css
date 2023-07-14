@@ -1,0 +1,55 @@
+/* All selectors */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This is body style */
+body {
+  width: 80%;
+  margin: auto;
+}
+
+/* Header part style */
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+header > div {
+  width: 50%;
+}
+
+header h1 {
+  color: #000;
+  font-family: PT Serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.62px;
+}
+
+header h2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+header p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
