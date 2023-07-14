@@ -53,3 +53,45 @@ header p {
   line-height: normal;
 }
 
+/* This is main part */
+
+main > .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+
+main > .container div:nth-child(2) {
+  margin-top: 30%;
+}
+
+main > .container .image {
+  position: relative;
+}
+
+main > .container .image img {
+  width: 85%;
+}
+
+main > .container .image .post {
+  color: #000;
+  font-family: PT Serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 40px;
+  right: -20px;
+}
+main > .container .image .name {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 10px;
+}
