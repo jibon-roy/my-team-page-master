@@ -5,22 +5,18 @@
   box-sizing: border-box;
 }
 
-/* This is body style */
-body {
-  width: 80%;
-  margin: auto;
-}
 
 /* Header part style */
 
 header {
+  max-width: 1400px;
+  padding: 5%;
   display: flex;
   justify-content: flex-start;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 5% auto;
 }
 
-header > div {
+header>div {
   width: 50%;
 }
 
@@ -55,39 +51,40 @@ header p {
 
 /* This is main part */
 
-main > .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
-  margin-bottom: 15%;
+main .container {
+  max-width: 1400px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+}
+/* main .container .image .main-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+main .container .image .main-group .group{
+  display: flex;
 }
 
-main > .container div:nth-child(2) {
-  margin-top: 30%;
+main>.container div:nth-child(2) {
+  margin-top: 100px;
 }
 
-main > .container .image {
-  position: relative;
+
+
+main>.container .image img {
+  width: 200px;
 }
 
-main > .container .image img {
-  width: 85%;
-}
-
-main > .container .image .post {
+main>.container .image .post {
   color: #000;
   font-family: PT Serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
-  transform: rotate(90deg);
-  position: absolute;
-  top: 40px;
-  right: -20px;
+  font-size: 16px;
+  writing-mode: vertical-lr;
 }
-main > .container .image .name {
+
+main>.container .image .name {
   color: #000;
   font-family: Poppins;
   font-size: 18px;
@@ -99,23 +96,55 @@ main > .container .image .name {
 
 /* This footer part style */
 
-footer > p {
-    color: #bdbdbd;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 50px;
+footer>p {
+  color: #bdbdbd;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+footer>p span {
+  color: #bdbdbd;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+/* This is responsive part */
+
+@media screen and (max-width:576px) {
+  header,.heading-part, .paragraph-part{
+    display: block;
+    width: 100%;
+  }
+  header h2{
+    margin-top: 50px;
+  }
+  main>.container {
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  main>.container .image-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  main> .container div:nth-child(2){
+    margin-top: 20px;
+  }
+  main> .container .image-column div:nth-child(2) {
+    margin-top: 150px;
   }
   
-  footer > p span {
-    color: #bdbdbd;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-decoration-line: underline;
-  }
+}
